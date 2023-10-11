@@ -242,7 +242,7 @@
                     });
 
                     // Megamenu style
-                    $(".megamenu-fw", this).each(function(){
+                    $(".", this).each(function(){
                         $(".col-menu", this).each(function(){
                             $(".content", this).addClass("animated");
                             $(".content", this).stop().fadeOut();
@@ -487,7 +487,7 @@
                 $body   = $('body'), 
                 getNav = $('nav.navbar.bootsnav'),
                 offset  = getNav.outerHeight();
-            
+           
             if( navScrollSpy.length ){
                 $body.scrollspy({target: '.navbar', offset: offset });
                 

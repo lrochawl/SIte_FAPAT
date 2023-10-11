@@ -52,7 +52,7 @@ nav.navbar.bootsnav{
 }
 
 nav.navbar.bootsnav ul.nav > li > a{
-    color: #6f6f6f;
+    color: #ad1111;
     background-color: transparent !important;
 }
 
@@ -62,6 +62,7 @@ nav.navbar.bootsnav ul.nav li.active > a:hover,
 nav.navbar.bootsnav ul.nav li.active > a:focus,
 nav.navbar.bootsnav ul.nav li.active > a{
     background-color: transparent;
+    color: #6308d3;
 }
 
 nav.navbar.bootsnav .navbar-toggle{

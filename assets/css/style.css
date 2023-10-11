@@ -452,6 +452,21 @@ i.fa {
     COLOR: BLACK;
 }
 
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp-button a {
+    display: block;
+}
+
+.whatsapp-button img {
+    width: 60px; /* Ajuste o tamanho conforme necessário */
+}
+
+
 /*
 socail icon
 --------------------------------*/

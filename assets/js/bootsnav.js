@@ -486,7 +486,7 @@
             var navScrollSpy = $(".navbar-scrollspy"),
                 $body   = $('body'), 
                 getNav = $('nav.navbar.bootsnav'),
-                offset  = getNav.outerHeight();
+                offset  = getNav.outerHeight()+10;
            
             if( navScrollSpy.length ){
                 $body.scrollspy({target: '.navbar', offset: offset });
@@ -532,7 +532,7 @@
                 var fixSpy = function() {
                     var data = $body.data('bs.scrollspy');
                     if (data) {
-                        offset = getNav.outerHeight();
+                        offset = getNav.outerHeight()+10;
                         data.options.offset = offset;
                         $body.data('bs.scrollspy', data);
                         $body.scrollspy('refresh');
@@ -543,7 +543,7 @@
                 var resizeTimer;
                 $(window).on('resize', function() {
                     clearTimeout(resizeTimer);
-                    var resizeTimer = setTimeout(fixSpy, 200);
+                    var resizeTimer = setTimeout(fixSpy, 20);
                 });
             }
         }
